@@ -154,6 +154,7 @@
   <ItemGroup>
     <ClCompile Include="LeetCode.cpp" />
     <ClCompile Include="src\p1290.cpp" />
+    <ClCompile Include="src\p141.cpp" />
     <ClCompile Include="src\p203.cpp" />
     <ClCompile Include="src\p206.cpp" />
     <ClCompile Include="src\p21.cpp" />
