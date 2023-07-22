@@ -2,6 +2,8 @@
 #include <map>
 #include <tuple>
 
+namespace {
+
 struct Direction {
     Direction(int row, int col)
         : row(row), col(col)
@@ -55,3 +57,4 @@ TEST(KnightProbabilityTest, test) {
     EXPECT_EQ(1, Solution().knightProbability(1, 0, 0, 0));
     EXPECT_EQ(0.0625, Solution().knightProbability(3, 2, 0, 0));
 }
+} // namespace

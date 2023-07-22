@@ -3,9 +3,11 @@
 
 using std::vector;
 
+namespace {
+
 class Solution {
 public:
-    int removeDuplicatesII(vector<int>& nums) {
+    int removeDuplicates(vector<int>& nums) {
         int i = 0;
         int j = 1;
         int count = 1;
@@ -30,23 +32,23 @@ public:
     }
 };
 
-
-TEST(RemoveDuplicatesTestII, test1) {
+TEST(RemoveDuplicatesTest, test1) {
     vector<int> v{1, 1, 1, 2, 2, 3};
     vector<int> expected{1, 1, 2, 2, 3};
 
-    EXPECT_EQ(5, Solution().removeDuplicatesII(v));
+    EXPECT_EQ(5, Solution().removeDuplicates(v));
     for (int i = 0; i < 5; ++i) {
         EXPECT_EQ(expected[i], v[i]);
     }
 }
 
-TEST(RemoveDuplicatesTestII, test2) {
+TEST(RemoveDuplicatesTest, test2) {
     vector<int> v{0, 0, 1, 1, 1, 1, 2, 3, 3};
     vector<int> expected{0, 0, 1, 1, 2, 3, 3};
 
-    EXPECT_EQ(7, Solution().removeDuplicatesII(v));
+    EXPECT_EQ(7, Solution().removeDuplicates(v));
     for (int i = 0; i < 7; ++i) {
         EXPECT_EQ(expected[i], v[i]);
     }
 }
+} // namespace

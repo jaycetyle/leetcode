@@ -3,6 +3,8 @@
 #include "tree_node.h"
 #include "p98_is_valid_bst_test_case_factory.h"
 
+namespace {
+
 class IsValidBSTInorderSolution {
  public:
   bool isValidBST(TreeNode* root) {
@@ -31,3 +33,4 @@ private:
 TEST(IsValidBSTInorderTest, test) {
   run_test<IsValidBSTInorderSolution>();
 }
+} // namespace

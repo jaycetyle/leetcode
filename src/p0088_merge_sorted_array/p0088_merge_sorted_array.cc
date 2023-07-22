@@ -4,6 +4,8 @@
 
 using std::vector;
 
+namespace {
+
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
@@ -56,3 +58,4 @@ TEST(MergeSortedArrayTest, test3) {
     Solution().merge(v1, 0, v2, 1);
     EXPECT_EQ(expected, v1);
 }
+} // namespace

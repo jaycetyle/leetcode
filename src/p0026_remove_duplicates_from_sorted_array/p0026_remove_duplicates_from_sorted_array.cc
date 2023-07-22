@@ -3,6 +3,8 @@
 
 using std::vector;
 
+namespace {
+
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
@@ -44,3 +46,4 @@ TEST(RemoveDuplicatesTest, test2) {
         EXPECT_EQ(expected[i], v[i]);
     }
 }
+} // namespace
