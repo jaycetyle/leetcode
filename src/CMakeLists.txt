@@ -4,6 +4,7 @@ find_package(GTest REQUIRED)
 # Source files
 # --------------------------------------------------------------------------------
 include_directories(${GTEST_INCLUDE_DIRS})
+include_directories(include)
 
 file(GLOB_RECURSE SOURCE *.cc)
 
