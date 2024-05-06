@@ -13,7 +13,7 @@ public:
             return {};
         }
 
-        _cache.resize(n/2, {});
+        _cache.resize(n/2+1, {});
         return solve(n);
     }
 
@@ -23,8 +23,8 @@ private:
             return { new TreeNode() };
         }
 
-        if (_cache[n/2].size()) {
-            return _cache[n];
+        if (_cache[n >> 1].size()) {
+            return _cache[n >> 1];
         }
 
         vector<TreeNode*> ans;
@@ -40,7 +40,7 @@ private:
             }
         }
 
-        _cache[n/2] = ans;
+        _cache[n >> 1] = ans;
         return ans;
     }
 
