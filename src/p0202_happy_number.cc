@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
 
+namespace {
+
 class Solution {
 public:
     int sqrtSumDigits(int n) {
@@ -34,3 +36,4 @@ TEST(HappyNumberTest, test1) {
     EXPECT_FALSE(Solution().isHappy(2));
     EXPECT_FALSE(Solution().isHappy(3));
 }
+} // namespace
